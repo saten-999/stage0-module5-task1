@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ArrayTasks",
+            "request": "launch",
+            "mainClass": "com.epam.mjc.stage0.ArrayTasks",
+            "projectName": "algorithms_and_data_structures"
+        },
+        {
+            "name": "Listen for Xdebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9003
+        }
+    ]
+}
