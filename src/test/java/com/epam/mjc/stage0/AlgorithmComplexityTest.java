@@ -20,24 +20,24 @@ class AlgorithmComplexityTest {
     private final AlgorithmComplexity algorithmComplexity = new AlgorithmComplexity();
 
     @Test
-    // public void badLinerSearch() {
-    //     assertEquals(1, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.badLinerSearch())));
-    // }
+    public void badLinerSearch() {
+        assertEquals(1, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.badLinerSearch())));
+    }
 
-    // @Test
-    // public void twoCycleSorting() {
-    //    assertEquals(0, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.twoCycleSorting())));
-    // }
+    @Test
+    public void twoCycleSorting() {
+       assertEquals(0, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.twoCycleSorting())));
+    }
 
-    // @Test
-    // public void binarySorting() {
-    //     assertEquals(2, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.binarySorting())));
-    // }
+    @Test
+    public void binarySorting() {
+        assertEquals(2, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.binarySorting())));
+    }
 
-    // @Test
-    // public void arrayItemAccess() {
-    //     assertEquals(3, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.arrayIndexItemAccess())));
-    // }
+    @Test
+    public void arrayItemAccess() {
+        assertEquals(3, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.arrayIndexItemAccess())));
+    }
 
     private String encodeAnswer(Complexity complexity) {
         return DigestUtils.md5Hex(complexity.name());
