@@ -1,7 +1,5 @@
 package com.epam.mjc.stage0;
-import java.util.stream.IntStream;
-// import java.lang.*;
-// import java.util.*;
+
 
 /**
  * Here are the tasks for working with the arrays.
@@ -114,23 +112,17 @@ public class ArrayTasks {
     public int[] getOnlyPositiveNumbers(int[] arr) {
 
         int[] pos;
-        // pos =new int[arr.length];
-        // int j=0;
+        pos =new int[arr.length];
+        int j=0;
 
-        // for (int i = 0; i < arr.length; i++) {
-        //     if(arr[i]>0){
-        //         pos[j] = arr[i];
-        //         j++;
-        //     }
-        // }
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]>0){
+                pos[j] = arr[i];
+                j++;
+            }
+        }
 
-        
-        return IntStream.of(arr)
-        .filter(i -> i >0)
-        .toArray();
-        // return IntStream.of(arr)
-        // .filter(i -> i >0)
-        // .toArray();
+        return arr;
     }
 
     /**
@@ -201,8 +193,8 @@ public class ArrayTasks {
 
         String[] kk={"pen", "apple", "pineapple"};
         ArrayTasks aaa = new ArrayTasks();
-        // aaa.sortRaggedArray(k);
-        aaa.getOnlyPositiveNumbers(s);
+        aaa.sortRaggedArray(k);
+        // aaa.getOnlyPositiveNumbers(s);
         // aaa.reverseArray(kk);
     }
 }
